@@ -22,7 +22,17 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 ## Architecture
 
 ```
-<img width="2674" height="2087" alt="HomeLabNetwork" src="https://github.com/user-attachments/assets/2760d855-3e56-429d-babb-0047db69ac07" />
+Austin, TX (R720 server)        San Antonio, TX (me)
+┌──────────────────────┐         ┌────────────────────┐
+│  Proxmox VE          │◄──────► │  iDRAC7 Enterprise │
+│  ├─ siem-01          │Tailscale│  Proxmox Web UI    │
+│  ├─ dc-01 (AD)       │  VPN    │  SSH               │
+│  ├─ workstation-01   │         └────────────────────┘
+│  ├─ attacker (Kali)  │
+│  ├─ nta-01           │
+│  └─ velociraptor-01  │
+└──────────────────────┘
+```
 
 ---
 
