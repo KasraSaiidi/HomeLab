@@ -23,21 +23,6 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 
 ![Network diagram](HomeLabNetwork.png)
 
-```
-Austin, TX (R720 server)        San Antonio, TX (me)
-┌──────────────────────┐         ┌────────────────────┐
-│  Proxmox VE          │◄──────► │  iDRAC7 Enterprise │
-│  ├─ siem-01          │Tailscale│  Proxmox Web UI    │
-│  ├─ dc-01 (AD)       │  VPN    │  SSH               │
-│  ├─ workstation-01   │         └────────────────────┘
-│  ├─ attacker (Kali)  │
-│  ├─ nta-01           │
-│  └─ velociraptor-01  │
-└──────────────────────┘
-
-
-```
-
 ---
 
 ## Detection Stack
