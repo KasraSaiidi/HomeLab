@@ -8,7 +8,7 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 
 | Component | Spec |
 |---|---|
-| Server | Dell PowerEdge R720 (from Microchip Technology) |
+| Server | Dell PowerEdge R720 |
 | CPU | Intel Xeon E5-2630 v2 — 8 cores @ 2.20GHz |
 | RAM | 32GB DDR3 ECC (expanding to 64GB) |
 | Storage | 1.2TB Dell SAS 10K + SATA SSD for Proxmox OS |
