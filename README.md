@@ -21,6 +21,8 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 
 ## Architecture
 
+![Network diagram](HomeLabNetwork.png)
+
 ```
 Austin, TX (R720 server)        San Antonio, TX (me)
 ┌──────────────────────┐         ┌────────────────────┐
@@ -32,6 +34,8 @@ Austin, TX (R720 server)        San Antonio, TX (me)
 │  ├─ nta-01           │
 │  └─ velociraptor-01  │
 └──────────────────────┘
+
+
 ```
 
 ---
