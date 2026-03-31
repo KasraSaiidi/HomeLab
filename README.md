@@ -40,7 +40,7 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 
 ## Hardware Troubleshooting Log
 
-Getting this server running was not straightforward. I hit four separate hardware issues and worked through each one — documenting it here because the diagnostic process is half the point.
+Getting this server running was not straightforward. I hit four separate hardware issues and worked through each one documenting it here because the diagnostic process is half the point.
 
 
 ### Defective RAM Stick
@@ -51,7 +51,7 @@ Getting this server running was not straightforward. I hit four separate hardwar
 ### No RAID Controller
 **What happened:** Proxmox installer and every OS I tried showed "No Hard Disk found."  
 **How I diagnosed it:** Dropped into the Linux terminal during the Proxmox install and ran `lspci | grep -i megaraid` — nothing returned. Ran full `lspci` output and confirmed no RAID controller showing in the PCI device list.  
-**What I did:** Identified the server shipped with a PERC S110 (software RAID, SATA only) with no PERC H710 Mini installed. Ordered a PERC H710P Mini.
+**What I did:** Identified the server shipped with a PERC S110 (software RAID, SATA only) with no PERC H710 Mini installed. Ordered and installed a PERC H710P Mini.
 
 
 ---
