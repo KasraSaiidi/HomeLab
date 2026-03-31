@@ -40,7 +40,7 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 
 ## Hardware Troubleshooting Log
 
-Getting this server running was not straightforward. I hit four separate hardware issues and worked through each one documenting it here because the diagnostic process is half the point.
+Getting this server running was not straightforward. I hit two separate hardware issues and worked through each one documenting it here because the diagnostic process is half the point.
 
 
 ### Defective RAM Stick
