@@ -46,7 +46,7 @@ The pipeline identifies suspicious activity, extracts IOCs, maps findings to MIT
 
 **Stack:** Python · Elasticsearch API · Ollama · Llama 3.1
 
-**Script:** [`llm-log-analyzer/ElasticAnalyzer.py`](./llm-log-analyzer/ElasticAnalyzer1.py)
+**Script:** [`llm-log-analyzer/ElasticAnalyzer1.py`](./llm-log-analyzer/ElasticAnalyzer1.py)
 
 ---
 
