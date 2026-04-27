@@ -70,7 +70,32 @@ Getting this server running was not straightforward. I hit two separate hardware
 
 ## Detection Rules
 
-*Coming soon — will be added as the lab builds out.*
+Custom detection rules deployed in Elastic SIEM, mapped to MITRE ATT&CK. Each rule generates alerts when triggered by agent telemetry from monitored endpoints
+
+### T1068 — Privilege Escalation (CVE-2026-33825)
+**Trigger:** Windows Defender AMProductVersion 4.18.26030.3011 detected on domain-joined host  
+**Index:** winlogbeat-*  
+**Severity:** Critical
+
+### T1003.001 — Credential Dumping (LSASS)
+**Trigger:** Sysmon Event ID 10 — process accessing lsass.exe from non-system process  
+**Index:** winlogbeat-*  
+**Severity:** High
+
+### T1550.002 — Pass the Hash
+**Trigger:** Event ID 4624 logon type 3 with NTLM auth from non-standard source  
+**Index:** winlogbeat-*  
+**Severity:** High
+
+### T1110 — Brute Force
+**Trigger:** 5+ Event ID 4625 (failed logons) from same source within 60 seconds  
+**Index:** winlogbeat-*  
+**Severity:** Medium
+
+### T1046 — Network Service Scanning (Port Scan)
+**Trigger:** Suricata alert — 15+ connection attempts to sequential ports from single source within 10 seconds  
+**Index:** suricata-*  
+**Severity:** Medium
 
 ---
 
