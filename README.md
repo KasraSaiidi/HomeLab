@@ -40,11 +40,10 @@ I built this lab because I wanted real hands-on experience with the tools a SOC 
 ---
 
 ## LLM Log Analysis Pipeline
-Built a Python pipeline that connects directly to Elasticsearch via API, pulls recent log entries, chunks them to fit the model's context window, and runs them through a locally hosted LLM (Llama 3.1 8B via Ollama) for automated threat analysis.
-
-The pipeline identifies suspicious activity, extracts IOCs, maps findings to MITRE ATT&CK techniques, and generates structured incident reports — all running locally with no internet or cloud dependency.
-
-**Stack:** Python · Elasticsearch API · Ollama · Llama 3.1
+Built a Python pipeline that connects directly to Elasticsearch via API, pulls recent log entries, chunks them to fit the model's context window, and runs them through a locally hosted LLM (Qwen 2.5 32B via Ollama) for automated threat analysis.
+The pipeline identifies suspicious activity, extracts IOCs, maps findings to MITRE ATT&CK techniques, and generates structured incident reports with overall severity ratings, key threats, priority actions, and timelines — all running locally with no internet or cloud dependency.
+Stack: Python · Elasticsearch API · Ollama · Qwen 2.5 32B
+Sample Output: llm-log-analyzer/sample-report.txt
 
 **Script:** Script: [llm-log-analyzer/ElasticAnalyzer.py](./llm-log-analyzer/ElasticAnalyzer.py)
 
