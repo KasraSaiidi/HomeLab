@@ -44,9 +44,9 @@ Built a Python pipeline that connects directly to Elasticsearch via API, pulls r
 
 **Stack:** Python · Elasticsearch API · Ollama · Qwen 2.5 32B
 
-**Sample Output:** Script: [llm-log-analyzer/LLM_Log_Analyzer.py](./llm-log-analyzer/elastic_report_20260520_190932.txt)
+**Sample Output:** [llm-log-analyzer/LLM_Log_Analyzer.py](./llm-log-analyzer/elastic_report_20260520_190932.txt)
 
-**Script:** Script: [llm-log-analyzer/LLM_Log_Analyzer.py](./llm-log-analyzer/LLM_Log_Analyzer.py)
+**Script:** [llm-log-analyzer/LLM_Log_Analyzer.py](./llm-log-analyzer/LLM_Log_Analyzer.py)
 
 ---
 
