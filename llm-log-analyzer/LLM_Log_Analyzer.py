@@ -17,7 +17,7 @@ CHUNK_SIZE = int(os.getenv('LOG_CHUNK_SIZE', 8000))
 MAX_LOGS = int(os.getenv('MAX_LOG_ENTRIES', 10))
 OUTPUT_DIR = os.getenv('REPORT_OUTPUT_DIR', "reports")
 ES_USER = "elastic"
-ES_PASS = "2pez82GidAc_xZjSzAP8"
+ES_PASS = ""
 
 # Logging Configuration
 import logging
