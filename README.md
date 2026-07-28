@@ -101,7 +101,7 @@ Custom detection rules deployed in Elastic SIEM, mapped to MITRE ATT&CK. Each ru
 
 ## Incident Reports
 
-*Coming soon — documenting each attack scenario end to end.*
+- [RedSun Adversary Emulation: DC01 Intrusion (PDF)](KasraSaiidi_RedSun_IR_Report.pdf) — full attack chain from recon to privilege escalation, mapped to MITRE ATT&CK, with SIEM and Defender detection coverage.
 
 ---
 
