@@ -9,15 +9,15 @@ import urllib3
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
 # ─── CONFIG ───────────────────────────────────────────────────────────────────
-ES_HOST = os.getenv('ELASTICSEARCH_HOST', "10.93.210.151")
+ES_HOST = os.getenv('ELASTICSEARCH_HOST', "localhost")
 ES_PORT = int(os.getenv('ELASTICSEARCH_PORT', 9200))
 ES_INDEX = os.getenv('ELASTICSEARCH_INDEX', "*")
 MODEL = os.getenv('LLM_MODEL', "qwen2.5:32b")
 CHUNK_SIZE = int(os.getenv('LOG_CHUNK_SIZE', 8000))
 MAX_LOGS = int(os.getenv('MAX_LOG_ENTRIES', 10))
 OUTPUT_DIR = os.getenv('REPORT_OUTPUT_DIR', "reports")
-ES_USER = "elastic"
-ES_PASS = ""
+ES_USER = os.getenv("ES_USER", "elastic")
+ES_PASS = os.getenv("ES_PASS", "")
 
 # Logging Configuration
 import logging
